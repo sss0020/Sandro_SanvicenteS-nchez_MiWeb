@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="csspaginaweb.css">
+</head>
+<body>
+<header>
+    <h1>Datos de la Cuenta</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index2.html">Juegos</a></li>
+        <li><a href="index3.html">Formulario</a></li>
+    </ul>
+</nav>
+<section class="formulario">
+    <h2>Formulario</h2>
+    <form>
+        <fieldset>
+            <legend>Datos de la Cuenta</legend>
+
+            <label for="Nickname">Nickname (obligatorio)</label>
+            <input type="text" id="Nickname" name="Nickname" placeholder="Lara Croft" required>
+
+            <label for="email">Email (obligatorio):</label>
+            <input type="email" id="email" name="email" placeholder="tombraider@gmail.com" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" pattern="[0-9]{4}" placeholder="4 dígitos (obligatorio)" required>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="color">Color del Perfil:</label>
+            <input type="color" id="color" name="color">
+
+            <label for="selector_juego">Elige tu juego favorito:</label>
+            <select id="selector_juego" name="selector_juego">
+                <option value="TR">Tomb Raider</option>
+                <option value="TR2">Tomb Raider II</option>
+                <option value="TR3">Tomb Raider III</option>
+                <option value="TRG">Tomb Raider Gold</option>
+                <option value="TR2G">Tomb Raider II Gold</option>
+                <option value="TR4">Tomb Raider: The Last Revelation</option>
+                <option value="TR5">Tomb Raider Chronicles</option>
+                <option value="TRTP">Tomb Raider: The Prophecy</option>
+                <option value="TR6">Tomb Raider: El Ángel de la Oscuridad</option>
+                <option value="TR7">Tomb Raider Legend</option>
+                <option value="TR8">Tomb Raider Anniversary Edition</option>
+                <option value="TR9">Tomb Raider Underworld</option>
+                <option value="LCanToL">Lara Croft and the Guardian of Light</option>
+                <option value="LCR">Lara Croft: Reflections</option>
+                <option value="TRDE">Tomb Raider: Definitive Edition</option>
+                <option value="TRanToO">Lara Croft and the Temple of Osiris</option>
+                <option value="TRRR">Lara Croft: Relic Run</option>
+                <option value="TRGO">Lara Croft GO</option>
+                <option value="RotTR">Rise of the Tomb Raider</option>
+                <option value="SotTR">Shadow of the Tomb Raider</option>
+                <option value="TRR">Tomb Raider Reloaded</option>
+            </select>
+
+            <label id="checkbox_juego">
+                <input type="checkbox" name="terminos" required>
+                Acepto los términos
+            </label>
+
+            <button type="submit">Guardar Cambios</button>
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <p>Diseño Web Profesional &copy; 2024. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

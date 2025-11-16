@@ -1,0 +1,296 @@
+
+@font-face {
+    font-family: "FuenteTombRaider";
+    src: url("Oswald/FuenteTombRaider.woff2"); format('woff2');
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    main{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        padding-top: 80px;
+        padding-bottom: 200px;
+        bottom: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 1.7;
+        color: #ffffff;
+        background-image: url('image/textura-piedra.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    #sidebar {
+        right: 0;
+        top: 0;
+        width: 400px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+        background-color: #3dff06;
+    }
+
+    /* títulos del aside */
+    #sidebar h3 {
+        color: #000000;
+    }
+
+    #bienvenida {
+        margin-left: 100px;
+        transform: translateX(30px);
+        background-image: url('image/textura-piedra-oscura.png');
+        text-align: justify;
+    }
+
+    /* navegación de páginas */
+    nav li {
+        margin: 0 15px;
+    }
+
+    /* navegación de páginas */
+    nav li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px 12px;
+    }
+    h4 {
+        font-family: 'FuenteTombRaider', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-family: 'FuenteTombRaider', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 40px;
+    }
+
+    .formulario h2 {
+        font-family: 'FuenteTombRaider', sans-serif;
+        text-align: center;
+        color: #000000;
+    }
+
+    h3 {
+        font-family: "FuenteTombRaider", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    h1 {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+    }
+
+    /* título de la página */
+    header h1 {
+        font-family: 'FuenteTombRaider', sans-serif;
+        text-align: center;
+        color: #000000;
+    }
+
+    #encabezado {
+        font-family: 'FuenteTombRaider', sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-image: url('image/Textura-Metal.png');
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* todos los strongs */
+    strong {
+        color: crimson;
+    }
+
+    /* todos los em */
+    em {
+        font-style: italic;
+        color: #14ff00;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0;
+        background: #c19456;
+
+    }
+
+    footer p {
+        color: #000000;
+        margin: 0;
+        position: relative;
+    }
+
+    .layout-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
+    }
+
+    article, section, #sidebar {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        background: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    /* pone el fondo a los artículos del inicio */
+    .fondo {
+        background-image: url('image/textura-madera-oscura.png');
+        background-repeat: repeat;
+        opacity: 1;
+    }
+
+    /* videos del aside */
+    .contenedor-video {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    }
+    /* unifica bordes de la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    /* crea el marco para la tabla */
+    th, td {
+        padding: 12px;
+        border: 1px solid #ccc;
+        text-align: center;
+        vertical-align: middle;
+        color: #f4f4f4;
+    }
+
+
+/* título tabla */
+caption {
+    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* títulos juegos */
+table th {
+    color: #000000;
+}
+
+/* iguala las imágenes de la tabla */
+table td {
+    img {
+    width: 300px;
+    height: auto;
+}
+
+}
+
+/* formulario */
+
+.formulario{
+    background-image: url('image/Mansión-Croft.png');
+}
+
+/* attr */
+input[type="email"] {
+    border-color: #ff2c00;
+}
+input[type="password"] {
+    border-color: #ff2c00;
+}
+input[type="text"] {
+    border-color: #ff2c00;
+}
+input[type="submit"] {
+    border-color: #ff2c00;
+}
+input[type="date"] {
+    border-color: #ff2c00;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* fondo del contenedor de los inputs */
+    background-image: url("image/textura-madera-oscura.png");
+}
+
+/* retiene las cosas en el contenedor */
+fieldset input,
+fieldset select,
+fieldset button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    color: #000000;
+    /* fondo de los inputs */
+    background-image: url("image/textura-madera.png");
+}
+
+/* el aceptar los términos */
+#checkbox_juego {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 30px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
