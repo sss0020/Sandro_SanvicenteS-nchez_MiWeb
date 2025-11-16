@@ -10,6 +10,8 @@
     margin: 0;
     padding: 0;
 
+    /* esto para arreglar lo del aside con el footer y
+    separar el aside de lo otro */
     main{
         display: grid;
         grid-template-columns: 5fr 1fr;
@@ -30,10 +32,7 @@
         background-size: cover;
     }
 
-    nav ul li {
-        list-style-type: none;
-    }
-
+    /* el navaegador de páginas */
     nav ul {
         display: flex;
         justify-content: center;
@@ -41,6 +40,7 @@
         padding-left: 0;
     }
 
+        /* aside */
     #sidebar {
         right: 0;
         top: 0;
@@ -53,6 +53,7 @@
         color: #000000;
     }
 
+    /* toda la info en el index */
     #bienvenida {
         margin-left: 100px;
         transform: translateX(30px);
@@ -71,13 +72,6 @@
         color: #ffffff;
         font-weight: bold;
         padding: 8px 12px;
-    }
-    h4 {
-        font-family: 'FuenteTombRaider', sans-serif;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000000;
-        margin-bottom: 15px;
     }
 
     h2 {
@@ -124,6 +118,7 @@
         margin-bottom: 10px;
     }
 
+    /* los encabezados de arriba */
     header {
         background-image: url('image/Textura-Metal.png');
         text-align: center;
@@ -160,12 +155,14 @@
         position: relative;
     }
 
+    /* separación entre los articles y el aside */
     .layout-grid {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 10fr 1fr;
         gap: 30px;
     }
 
+    /* crea las cajas en el index para articles y aside */
     article, section, #sidebar {
         padding: 20px;
         margin-bottom: 20px;
@@ -209,83 +206,83 @@
     }
 
 
-/* título tabla */
-caption {
-    color: #f4f4f4;
-    font-weight: bold;
-    text-align: center;
+    /* título tabla */
+    caption {
+        color: #f4f4f4;
+        font-weight: bold;
+        text-align: center;
 
-}
+    }
 
-/* títulos juegos */
-table th {
-    color: #000000;
-}
+    /* títulos juegos */
+    table th {
+        color: #000000;
+    }
 
-/* iguala las imágenes de la tabla */
-table td {
-    img {
-    width: 300px;
-    height: auto;
-}
+    /* iguala las imágenes de la tabla */
+    table td {
+        img {
+        width: 300px;
+        height: auto;
+    }
 
-}
+    }
 
-/* formulario */
+    /* formulario */
 
-.formulario{
-    background-image: url('image/Mansión-Croft.png');
-}
+    .formulario{
+        background-image: url('image/Mansión-Croft.png');
+    }
 
-/* attr */
-input[type="email"] {
-    border-color: #ff2c00;
-}
-input[type="password"] {
-    border-color: #ff2c00;
-}
-input[type="text"] {
-    border-color: #ff2c00;
-}
-input[type="submit"] {
-    border-color: #ff2c00;
-}
-input[type="date"] {
-    border-color: #ff2c00;
-}
+    /* attr */
+    input[type="email"] {
+        border-color: #ff2c00;
+    }
+    input[type="password"] {
+        border-color: #ff2c00;
+    }
+    input[type="text"] {
+        border-color: #ff2c00;
+    }
+    input[type="submit"] {
+        border-color: #ff2c00;
+    }
+    input[type="date"] {
+        border-color: #ff2c00;
+    }
 
-fieldset {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    gap: 10px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    /* fondo del contenedor de los inputs */
-    background-image: url("image/textura-madera-oscura.png");
-}
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 10px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        /* fondo del contenedor de los inputs */
+        background-image: url("image/textura-madera-oscura.png");
+    }
 
-/* retiene las cosas en el contenedor */
-fieldset input,
-fieldset select,
-fieldset button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    color: #000000;
-    /* fondo de los inputs */
-    background-image: url("image/textura-madera.png");
-}
+    /* retiene las cosas en el contenedor */
+    fieldset input,
+    fieldset select,
+    fieldset button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        color: #000000;
+        /* fondo de los inputs */
+        background-image: url("image/textura-madera.png");
+    }
 
-/* el aceptar los términos */
-#checkbox_juego {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    font-size: 30px;
-}
+    /* el aceptar los términos */
+    #checkbox_juego {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 30px;
+    }
 
 *, *::before, *::after {
     box-sizing: border-box;
